@@ -30,3 +30,4 @@ peerDependencyRules:
     vitest: "*"
 allowBuilds:
   "@tailwindcss/oxide": true
+  esbuild: true
