@@ -16,6 +16,16 @@
     "test": "npm run test:unit -- --run && npm run test:e2e",
     "test:e2e": "playwright install && playwright test"
   },
+  "dependencies": {
+    "@dimforge/rapier3d-compat": "catalog:",
+    "@threlte/core": "catalog:",
+    "@threlte/extras": "catalog:",
+    "@threlte/rapier": "catalog:",
+    "dexie": "catalog:",
+    "gl-matrix": "catalog:",
+    "postprocessing": "catalog:",
+    "three": "catalog:"
+  },
   "devDependencies": {
     "@eslint/compat": "latest",
     "@eslint/js": "^10.0.1",
