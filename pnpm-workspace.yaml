@@ -30,6 +30,12 @@ catalog:
   bits-ui: ^2.18.1
   '@internationalized/date': ^3.12.1
   vaul-svelte: 1.0.0-next.7
+  '@threlte/studio': ^0.4.3
+  '@threlte/theatre': ^3.2.2
+  '@theatre/core': ^0.7.2
+  '@theatre/studio': ^0.7.2
+  '@types/three': ^0.184.1
+  '@vitest/browser-playwright': ^4.1.6
 overrides:
   vite: "catalog:"
   vitest: "catalog:"
@@ -41,5 +47,6 @@ peerDependencyRules:
     vite: "*"
     vitest: "*"
 allowBuilds:
+  '@parcel/watcher': true
   "@tailwindcss/oxide": true
   esbuild: true
