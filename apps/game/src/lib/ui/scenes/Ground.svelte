@@ -2,7 +2,7 @@
   import { T } from '@threlte/core'
   import { AutoColliders } from '@threlte/rapier'
   const ACTUAL_PITCH_SIZE = [105, 68, 1]; // [length, width]
-  const MULTIPLIER = 0.5;
+  const MULTIPLIER = 2;
 
 const PITCH_SIZE = ACTUAL_PITCH_SIZE.map(dim => dim * MULTIPLIER);
 

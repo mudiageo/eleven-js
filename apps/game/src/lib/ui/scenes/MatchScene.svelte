@@ -1,6 +1,7 @@
 <script>
   import { T, useTask } from '@threlte/core'
   import { AutoColliders } from '@threlte/rapier'
+  import { OrbitControls } from '@threlte/extras'
 import { Vector3, MathUtils, Quaternion } from 'three'
 import Ground from './Ground.svelte';
 import Ball from './Ball.svelte';
@@ -14,13 +15,12 @@ import { matchStore }  from '$lib/state/match-store.svelte';
   useTask(delta => {
     const camera = matchStore.camera?.ref.position 
     const ball = matchStore.ball?.ref.translation()
-console.log(camera)
-console.log(ball)
-console.log(matchStore.ball?.ref)
     camera.x = camera.x + (ball.x - camera.x) * 0.05
   })
   
 </script>
+
+
 
 <T.PerspectiveCamera
   makeDefault
