@@ -2,8 +2,8 @@
   import { onMount, onDestroy } from 'svelte';
   import { Canvas } from '@threlte/core';
   import { World } from '@threlte/rapier';
-  import MatchScene from '$lib/ui/scenes/MatchScene.svelte'
-  import HUD from '$lib/ui/HUD.svelte'
+  import MatchScene from '$lib/components/scenes/MatchScene.svelte'
+  import HUD from '$lib/components/hud/HUD.svelte'
     import { matchStore }  from '$lib/state/match-store.svelte';
   let paused = $state(false);
  
@@ -28,6 +28,7 @@
     width: 100vw;
     height: 100vh;
     overflow: hidden;
+    background:black;
     
   }
 </style>
